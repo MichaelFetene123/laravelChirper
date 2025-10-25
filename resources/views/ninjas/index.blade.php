@@ -8,9 +8,22 @@
 <body>
     <h2> Currently Available Ninjas </h2>
     <p>{{ $greeting }}</p>
-
     <ul>
-        <li>Ninja Here </li>
+        <li>
+        <a href="">
+        {{ $ninjas[0]['name'] }}    
+        </a>    
+        </li>
+        <li>
+        <a href="">
+        {{ $ninjas[0]['skill'] }}    
+        </a>    
+        </li>
+        <li>
+        <a href="">
+        {{ $ninjas[0]['id'] }}    
+        </a>    
+        </li>
     </ul>
 </body>
 </html>

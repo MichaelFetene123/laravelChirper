@@ -7,5 +7,11 @@ Route::get('/', function () {
 });
 
 Route::get('/ninjas', function (){
-    return view('ninjas.index', ['greeting' => 'Hello']);
+
+    $ninjas = [
+        ['name' => 'miki', 'skill' => 75, 'id' => 1],
+        ['name' => 'emaye', 'skill' => 85, 'id' => 2]
+    ]; 
+
+    return view('ninjas.index', ['greeting' => 'Hello', 'ninjas' => $ninjas]);
 });
