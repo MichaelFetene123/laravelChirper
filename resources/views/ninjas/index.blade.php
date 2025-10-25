@@ -14,7 +14,11 @@
 
     <ul>
     @foreach ($ninjas  as $ninja)
-{{ $ninja['name'] }}        
+        <li>
+            {{ $ninja['name'] }}   
+            <a href="/ninjas/{{ $ninja['id'] }}">View Detail</a>  
+             
+        </li>
     @endforeach
     </ul>
 </body>
