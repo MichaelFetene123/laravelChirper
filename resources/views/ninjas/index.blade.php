@@ -7,7 +7,11 @@
 </head>
 <body>
     <h2> Currently Available Ninjas </h2>
-    <p>{{ $greeting }}</p>
+
+    @if( $greeting  == 'Hello' )
+    <p>Hi from inside the if statement </p>
+    @endif
+
     <ul>
         <li>
         <a href="/ninjas/{{ $ninjas[0]['id'] }}">
