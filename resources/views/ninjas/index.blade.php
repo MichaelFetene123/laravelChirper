@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninja Network | Home </title>
-</head>
-<body>
-    <h2> Currently Available Ninjas </h2>
 
-    @if( $greeting  == 'Hello' )
-    <p>Hi from inside the if statement </p>
-    @endif
 
+   <x-layout>
+    
+     <h2> Currently Available Ninjas </h2>
     <ul>
     @foreach ($ninjas  as $ninja)
         <li>
@@ -21,5 +12,5 @@
         </li>
     @endforeach
     </ul>
-</body>
-</html>
+
+   </x-layout>
