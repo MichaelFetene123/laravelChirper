@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ninja;
+
 abstract class Controller
 {
     public function index(){
-        // ninjas -> /ninjas/
-        // fetch all ninjas from the database
+        $ninjas = Ninja::orderBy('created_at', 'desc')->get();
+        return view('ninjas.index', ['ninjas' => $ninjas]);
     }
 
     public function show($id){
