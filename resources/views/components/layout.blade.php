@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
     
 </head>
-<body class='text-center px-8 py-12'>
+<body class=' px-8 py-12'>
     <header>
         <nav>
             <h1>
